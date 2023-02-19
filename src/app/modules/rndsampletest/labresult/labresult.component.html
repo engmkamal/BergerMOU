@@ -1,4 +1,4 @@
-<div style="width: 100%; margin: auto;">
+<div style="width: 1360px; margin: auto;">
    <div style="width: 100%; background-color: #014AC5;">
       <form [formGroup]="TestParameter" (ngSubmit)="onSubmitBtn()" noval fxLayout="column" fxFlex="1 1 100"
          class="frmCont panel" style="background-color: #014AC5;">
@@ -23,7 +23,7 @@
                                  <div fxFlex="1 1 2">
                                     <mat-label>:</mat-label>
                                  </div>
-                                 <div fxFlex="1 1 83">
+                                 <div fxFlex="1 1 83" style="margin-top: 18px;">
                                     <mat-form-field appearance="no" fxFlex="100" class="matFldMarg">
                                        <input matInput formControlName="SampleID" readonly disabled>
                                     </mat-form-field>
@@ -36,7 +36,7 @@
                                  <div fxFlex="1 1 2">
                                     <mat-label>:</mat-label>
                                  </div>
-                                 <div fxFlex="1 1 83">
+                                 <div fxFlex="1 1 83" style="margin-top: 18px;">
                                     <mat-form-field appearance="no" fxFlex="100" class="matFldMarg">
                                        <textarea matInput formControlName="SampleDescription" readonly disabled style="resize: none;" ></textarea>
                                     </mat-form-field>
@@ -49,7 +49,7 @@
                                  <div fxFlex="1 1 2">
                                     <mat-label>:</mat-label>
                                  </div>
-                                 <div fxFlex="1 1 83">
+                                 <div fxFlex="1 1 83" style="margin-top: 18px;">
                                     <mat-form-field appearance="no" fxFlex="100" class="matFldMarg">
                                        <input matInput formControlName="ReferenceNo" readonly disabled>
                                     </mat-form-field>
@@ -62,7 +62,7 @@
                                  <div fxFlex="1 1 2">
                                     <mat-label>:</mat-label>
                                  </div>
-                                 <div fxFlex="1 1 83">
+                                 <div fxFlex="1 1 83" style="margin-top: 18px;">
                                     <mat-form-field appearance="no" fxFlex="100" class="matFldMarg">
                                        <input matInput formControlName="SampleType" readonly disabled>
                                     </mat-form-field>
@@ -75,7 +75,7 @@
                                  <div fxFlex="1 1 2">
                                     <mat-label>:</mat-label>
                                  </div>
-                                 <div fxFlex="1 1 83">
+                                 <div fxFlex="1 1 83" style="margin-top: 18px;">
                                     <mat-form-field appearance="no" fxFlex="100" class="matFldMarg">
                                        <textarea matInput formControlName="SpecificRequirement" readonly disabled style="resize: none;"></textarea>
                                     </mat-form-field>
@@ -109,7 +109,7 @@
                                  <div fxFlex="1 1 2">
                                     <mat-label>:</mat-label>
                                  </div>
-                                 <div fxFlex="1 1 64" style="margin-top: -20px;">
+                                 <div fxFlex="1 1 64" style="margin-top: 0px;">
                                     
                                     <mat-form-field appearance="outline" >
                                        <mat-select typeaheadDebounceInterval="50000" formControlName="PackageCondition" disableScrollLock="true">
@@ -139,7 +139,7 @@
                               <div fxFlex="1 1 2">
                                  <mat-label>:</mat-label>
                               </div>
-                              <div fxFlex="1 1 64" style="margin-top: -20px;">
+                              <div fxFlex="1 1 64" style="margin-top: 0px;">
                                  <mat-form-field appearance="outline">
                                     <input matInput [matDatepicker]="TestPeriodFrom" formControlName='TestPeriodFrom'>
                                     <mat-datepicker-toggle matSuffix [for]="TestPeriodFrom"></mat-datepicker-toggle>
@@ -155,7 +155,7 @@
                               <div fxFlex="1 1 2">
                                  <mat-label>:</mat-label>
                               </div>
-                              <div fxFlex="1 1 64" style="margin-top: -20px;">
+                              <div fxFlex="1 1 64" style="margin-top: 0px;">
                                  <mat-form-field appearance="outline">
                                     <input matInput [matDatepicker]="TestPeriodTo" formControlName='TestPeriodTo'>
                                     <mat-datepicker-toggle matSuffix [for]="TestPeriodTo"></mat-datepicker-toggle>
@@ -173,7 +173,7 @@
                               <div fxFlex="1 1 1">
                                  <mat-label>:</mat-label>
                               </div>
-                              <div fxFlex="1 1 82" style="margin-top: -20px;">
+                              <div fxFlex="1 1 82" style="margin-top: 0px;">
                                  <mat-form-field appearance="outline" fxFlex="100">
                                     <textarea matInput formControlName="PacComments" #pacComments maxlength="150" style="resize: none;"></textarea>
                                     <!-- <span matInput class="input" role="textbox" contenteditable formControlName="PacComments" #pacComments maxlength="150" style="min-width: 500px; border: 1px solid #ccc;"></span>  -->
@@ -208,7 +208,7 @@
                               <div fxFlex="1 1 1">
                                  <mat-label>:</mat-label>
                               </div>
-                              <div fxFlex="1 1 79">
+                              <div fxFlex="1 1 79" style="margin-top:-2px;">
                                  <input formControlName="Title" readonly disabled class="reportTxt" style="width: 400px;">
                               </div>
                            </div>
@@ -221,32 +221,32 @@
                               <div fxFlex="1 1 1">
                                  <mat-label>:</mat-label>
                               </div>
-                              <div fxFlex="1 1 79">
+                              <div fxFlex="1 1 79" style="margin-top:-2px;">
                                  <input formControlName="Method" readonly disabled class="reportTxt" style="width: 300px;">
                               </div>
                            </div>
                         </div>
                         <br/>
-                        <div fxFlex="100" fxLayout="row" fxLayout.xs="column" fxLayoutGap="5px">
-                           <div fxFlex="1 1 100" fxLayout="row" fxLayoutAlign="space-between start">
-                              <div fxFlex="1 1 100" fxLayout="row" class="div-outer-table">
-                                 <table class="table" formArrayName="TestResults">
+                        <div fxFlex="94" fxLayout="row" fxLayout.xs="column" fxLayoutGap="5px">
+                           <div fxFlex="1 1 94" fxLayout="row" fxLayoutAlign="space-between start">
+                              <div fxFlex="1 1 100" fxLayout="row" class="div-outer-table" style="max-width:1350px; overflow-x: scroll;">
+                                 <table class="table" formArrayName="TestResults" >
                                     <thead class="thead bg-info">
                                        <tr>
-                                          <th>#</th>
-                                          <th scope="col">SampleID</th>
-                                          <th scope="col" class="text-center">
-                                       <tr>
-                                          <th scope="col">#</th>
-                                          <th scope="col" style="width:122px">Parameter<label style="color:red">*</label></th>
-                                          <th scope="col" style="width:129px">TestResult<label style="color:red">*</label></th>
-                                          <th scope="col" style="width:78px" *ngIf="requestInfo.Title.Code != 'CORC'">Unit<label style="color:red">*</label></th>
-                                          <th scope="col" style="width:78px" *ngIf="requestInfo.Title.Code == 'CORC'">Hours</th>
-                                          <th scope="col" style="width:78px">RL</th>
-                                          <th scope="col" style="width:88px">LimitValue</th>
-                                          <th scope="col" style="width:119px">ResComment</th>
-                                          <th scope="col" hidden>Action</th>
-                                       </tr>
+                                          <th style="max-width: 30px">SL</th>
+                                          <th scope="col" style="min-width: 140px">SampleID</th>
+                                          <th scope="col" class="text-center" style="min-width: 725px">
+                                             <tr>
+                                                <th scope="col" style="max-width: 30px">sl</th>
+                                                <th scope="col" style="min-width:199px">Parameter<label style="color:red">*</label></th>
+                                                <th scope="col" style="min-width:199px">TestResult<label style="color:red">*</label></th>
+                                                <th scope="col" style="min-width:199px" *ngIf="requestInfo.Title.Code != 'CORC'">Unit<label style="color:red">*</label></th>
+                                                <th scope="col" style="min-width:199px" *ngIf="requestInfo.Title.Code == 'CORC'">Hours</th>
+                                                <th scope="col" style="min-width:199px">RL</th>
+                                                <th scope="col" style="min-width:199px">LimitValue</th>
+                                                <th scope="col" style="min-width:199px">ResComment</th>
+                                                <th scope="col" hidden>Action</th>
+                                             </tr>
                                        </th>
                                        <th scope="col" hidden>Action</th>
                                        </tr>
@@ -254,35 +254,35 @@
                                     <tbody>
                                        <tr *ngFor="let person of getPeople(TestParameter); let i=index"
                                           [formGroupName]="i">
-                                          <td>{{i+1}}</td>
-                                          <td><input formControlName="SampleID" style="width:125px" readonly disabled>
+                                          <td style="min-width: 36px">{{i+1}}</td>
+                                          <td><input formControlName="SampleID" style="min-width:125px" readonly disabled>
                                           </td>
                                           <td>
                                              <table class="table table-sm" formArrayName="Results">
                                                 <tbody>
                                                    <tr *ngFor="let address of getAddress(person); let j=index"
                                                       [formGroupName]="j">
-                                                      <td>
+                                                      <td style="min-width: 30px">
                                                          {{j+1}}
                                                       </td>
-                                                      <td>
-                                                         <input formControlName="Parameter" style="width:115px">
+                                                      <td style="min-width:115px">
+                                                         <input formControlName="Parameter" style="min-width:115px">
                                                       </td>
-                                                      <td>
-                                                         <input formControlName="TestResult" style="width:120px">
+                                                      <td style="min-width:115px">
+                                                         <input formControlName="TestResult" style="min-width:120px">
                                                       </td>
 
-                                                      <td>
-                                                         <input formControlName="Unit" style="width:70px">
+                                                      <td style="min-width:115px">
+                                                         <input formControlName="Unit" style="min-width:70px">
                                                       </td>
-                                                      <td>
-                                                         <input formControlName="RL" style="width:70px">
+                                                      <td style="min-width:115px">
+                                                         <input formControlName="RL" style="min-width:70px">
                                                       </td>
-                                                      <td>
-                                                         <input formControlName="LimitValue" style="width:80px">
+                                                      <td style="min-width:115px">
+                                                         <input formControlName="LimitValue" style="min-width:80px">
                                                       </td>
-                                                      <td>
-                                                         <input formControlName="ResComment" style="width:110px">
+                                                      <td style="min-width:115px">
+                                                         <input formControlName="ResComment" style="min-width:110px">
                                                       </td>
                                                       <td hidden>
                                                          <button class="btn btn-success" *ngIf="j<1"

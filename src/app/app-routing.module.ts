@@ -43,13 +43,13 @@ const routes: Routes =[
   {
     path: '', 
     //component:  HrcornerpageComponent
-    component: AllmousComponent
+    //component: AllmousComponent
     //component: ReimbursementdashboardComponent
     //component: WorkshopproposalreportComponent,
     //component: WorkshopproposaldashboardComponent
     //component: SampletestdashboardComponent 
     //component: ItservicerequestdashboardComponent //==for IT Service
-    //component: RndlabtestparentComponent, //====final starting 100% 100% 100% 100% final
+    component: RndlabtestparentComponent, //====final starting 100% 100% 100% 100% final
     
     //component: SampletestreportComponent,
     //component: MyitassetsComponent, //=== final for MyITAssets card view 100% working ----
@@ -67,20 +67,20 @@ const routes: Routes =[
   },   
   {
     path: 'index.aspx',
-    component: AllmousComponent
+    //component: AllmousComponent
     //component: WorkshopproposaldashboardComponent
     //component: SampletestdashboardComponent
     //component: ItservicerequestdashboardComponent //==for IT Service
-    //component: RndlabtestparentComponent,
+    component: RndlabtestparentComponent,
     //component: ReimbursementmstrComponent,
     //component: ItassetmanagementmstrComponent,    
   }, {
     path: 'home',
-    component: AllmousComponent
+    //component: AllmousComponent
     //component: WorkshopproposaldashboardComponent
     //component: SampletestdashboardComponent
     //component: ItservicerequestdashboardComponent //==for IT Service
-    //component: RndlabtestparentComponent,
+    component: RndlabtestparentComponent,
     //component: ReimbursementmstrComponent,
     //component: ItassetmanagementmstrComponent,    
   },
